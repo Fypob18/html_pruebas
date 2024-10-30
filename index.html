@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Form</title>
+    <!--FAVICON-->
+    <link rel=¨icon¨ type="image/x-icon" href="./favicon.ico">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <!--HEADER-->
+<header>
+<h1>RosquillAmbar</h1>
+<nav class="navigationBar">
+ <ul class="navigationBarList">
+<li>
+    <a class="enlace" href="#">Inicio</a>
+</li>
+<li>
+    <a class="enlace active" href="./views/formulario2.html">Formulario 2</a>
+</li>
+<li>
+    <a class="enlace active" href="./views/galeria.html">Galeria</a>
+</li>
+<li>
+    <a class="enlace active" href="./views/contacto.html">contacto</a>
+</li>
+ </ul>
+</nav>
+<!-- MAIN -->
+</header>
+<div class="container">
+<form id="myForm" name="myForm" action="#" method="get" target="_self">
+    <ul class="flex-outer">
+<li>
+    <label for="first-name">Nombre</label>
+    <input type="text" id="first-name" name="first-name" placeholder="Escriba su nombre"
+    pattern="[A-Z a-z]{3,15}"
+    title="Escriba solo letra entre 3 y 15 caracteres" required>
+</li>
+<li>
+<label for="surname">Apellido</label>
+<input type="text" id="surname" name="first-name" placeholder="Escriba su Apellido"
+pattern="[A-Z a-z]{4,40}"
+title="Escriba solo letra entre 4 y 40 caracteres" required>
+</li>
+<li>
+    <label for="email">Correo Electronico</label>
+<input type="email" id="email" name="email" placeholder="Escriba su Correo Electronico"
+pattern="[a-zA-Z0-9_.]+@[a-z0-9._-]+/.[a-z]{2,4}"
+title="Escriba su correo electronico" required>
+</li>
+<li>
+    <label for="telephone">Telefono</label>
+<input type="tel" id="telephone" name="telephone" placeholder="Escriba su Telefono"
+pattern="[0-9]{9}"
+title="Escriba los 9 numeros de su Telefono movil" required>
+</li>
+<li>
+    <label for="message">Mensaje</label>
+    <textarea rows="6" id="message" placeholder="Escriba aqui su Mensaje"></textarea>    
+</li>
+<li>
+    <p>Edad</p>
+    <ul class="flex-inner">
+<li>
+    <label for="veite-veintinueve">20-29</label>
+    <input type="radio" id="veite-veintinueve" name="age-option" value="20-29">
+</li>
+    </ul>
+</li>
+<li>
+    <label for="trenta-trentaynueve">30-39</label>
+    <input type="radio" id="trenta-trentaynueve" name="age-option" value="30-39">
+</li>
+<li>
+    <label for="cuarenta-cuarentaynueve">40-49</label>
+    <input type="radio" id="cuarenta-cuarentaynueve" name="age-option" value="40-49">
+</li>
+<li>
+    <label for="cincuenta-cincuentaynueve">50-59</label>
+    <input type="radio" id="cincuenta-cincuentaynueve" name="age-option" value="50-59">
+</li>
+<li>
+    <label for="otherAges">otros</label>
+    <input type="radio" id="otherAges" name="age-option" value="otros">
+</li>
+<li>
+<li class="liButtons">
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+</li>
+    </ul>
+</form>
+</div>
+<!--FOOTER-->
+<footer>
+
+</footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
